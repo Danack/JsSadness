@@ -13,6 +13,10 @@ services:
     build: containers/js_dev_builder
     volumes:
       - .:/var/app
+  js_sass_prod_builder:
+    build: containers/js_sass_prod_builder
+    volumes:
+      - .:/var/app
   sass_dev_builder:
     build: containers/sass_dev_builder
     volumes:
@@ -49,13 +53,6 @@ services:
       default_network:
         aliases:
           - internal.jssadness.com
-  redis:
-    image: redis:6.0.10
-    volumes:
-      - .:/var/app
-    command: ["redis-server", "/var/app/containers/redis/config/redis.conf"]
-    networks:
-      default_network:
   varnish:
     build: containers/varnish
     environment:
