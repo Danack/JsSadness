@@ -1,0 +1,47 @@
+{
+    "name": "jssadness/jssadness",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Danack",
+            "email": "Danack@basereality.com"
+        }
+    ],
+    "require": {
+        "danack/configurator": "1.1.0",
+        "danack/console": "^2.6",
+        "danack/esprintf": "^1.0.0",
+        "danack/looping-exec": "^0.3.0",
+        "danack/params": "^0.6.3",
+        "slim/slim": "3.12.3",
+        "ext-posix": "*"
+    },
+    "require-dev": {
+        "danack/coding-standard": "0.1.0",
+        "slevomat/coding-standard": "^4.8.4",
+        "squizlabs/php_codesniffer": "^3.3.1",
+        "yoast/yoastcs": "1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "JsSadness\\": "src/",
+            "OpenDocs\\": "src/"
+        },
+        "files": [
+            "src/functions.php",
+            "src/site_html.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "PJsSadnessTest\\": "test/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.4"
+        },
+        "platform-check": false
+    }
+}

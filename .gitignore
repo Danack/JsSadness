@@ -1,0 +1,15 @@
+/config.generated.php
+/containers/varnish/config/default.vcl
+/containers/php_fpm/config/php.ini
+/containers/php_fpm/config/fpm.conf
+/containers/nginx/config/nginx.conf
+/app/node_modules/
+/app/public/js/app.bundle.js
+/app/public/js/app.bundle.js.gz
+/app/public/js/app.bundle.js.map.gz
+/app/public/css/site.css
+/app/public/css/site.css.map
+/vendor/
+/var/
+.idea/
+app/public/js/app.bundle.js.map
