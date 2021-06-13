@@ -13,3 +13,4 @@
 /var/
 .idea/
 app/public/js/app.bundle.js.map
+site.css.gz
